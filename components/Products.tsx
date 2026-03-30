@@ -1,5 +1,15 @@
 const products = [
   {
+    tag: "AI Commerce",
+    title: "dealZ",
+    description:
+      "AI-powered deals platform that surfaces the best offers, matches buyers with sellers intelligently, and automates negotiation — so you always close at the right price.",
+    status: "Live",
+    gradient: "from-orange-600/20 to-amber-600/10",
+    accent: "orange",
+    features: ["AI-powered deal discovery", "Smart price matching", "Automated deal workflows"],
+  },
+  {
     tag: "Developer Productivity",
     title: "AI-Powered Code Review",
     description:
@@ -32,12 +42,14 @@ const products = [
 ];
 
 const accentColors: Record<string, string> = {
+  orange: "text-orange-400 border-orange-500/30 bg-orange-500/10",
   violet: "text-violet-400 border-violet-500/30 bg-violet-500/10",
   cyan: "text-cyan-400 border-cyan-500/30 bg-cyan-500/10",
   emerald: "text-emerald-400 border-emerald-500/30 bg-emerald-500/10",
 };
 
 const dotColors: Record<string, string> = {
+  orange: "bg-orange-400",
   violet: "bg-violet-400",
   cyan: "bg-cyan-400",
   emerald: "bg-emerald-400",
@@ -56,16 +68,15 @@ export default function Products() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-5">
             Products built for{" "}
             <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
-              the modern engineer
+              the AI era
             </span>
           </h2>
           <p className="text-white/45 max-w-xl mx-auto">
-            Each product targets a critical friction point in the software development lifecycle, powered by the latest
-            advances in AI.
+            Each product targets a real problem in the world, powered by the latest advances in AI.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6">
           {products.map((product) => (
             <div
               key={product.title}

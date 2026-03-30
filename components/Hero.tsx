@@ -21,7 +21,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
         <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-violet-500/30 bg-violet-500/10 text-violet-300 text-xs font-medium mb-8">
           <span className="w-1.5 h-1.5 rounded-full bg-violet-400 animate-pulse" />
-          Building the future of software engineering
+          Building products powered by AI
         </div>
 
         <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-6 leading-[1.1]">
@@ -32,8 +32,8 @@ export default function Hero() {
         </h1>
 
         <p className="text-lg md:text-xl text-white/50 max-w-2xl mx-auto mb-10 leading-relaxed">
-          Codevolve builds AI-powered products that transform how software is created, reviewed, and shipped — helping
-          engineering teams move faster with confidence.
+          Codevolve builds AI-powered products that transform industries — creating smarter experiences and unlocking new
+          possibilities across commerce, software, and beyond.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

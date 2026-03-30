@@ -13,13 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Codevolve — Engineering the AI Era",
+  title: "Codevolve — Building with AI",
   description:
-    "Codevolve Pty Ltd builds AI-powered products that evolve the way software engineering is done. Transforming development workflows across industries.",
-  keywords: ["AI", "software engineering", "developer tools", "artificial intelligence"],
+    "Codevolve Pty Ltd builds AI-powered products across industries. From commerce to software, we create intelligent products that evolve how people work.",
+  keywords: ["AI", "artificial intelligence", "AI products", "dealZ", "commerce", "software"],
   openGraph: {
-    title: "Codevolve — Engineering the AI Era",
-    description: "Building AI-powered products that evolve software engineering.",
+    title: "Codevolve — Building with AI",
+    description: "Building AI-powered products that change how people work.",
     type: "website",
   },
 };

@@ -17,9 +17,9 @@ const values = [
         <path d="M10 6v4l3 2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
-    title: "Developer Experience",
+    title: "Product Excellence",
     description:
-      "We obsess over how engineers actually work. Our tools fit naturally into existing workflows without adding friction or overhead.",
+      "We obsess over how people actually work. Our products are designed to feel effortless, fitting naturally into everyday workflows without friction.",
   },
   {
     icon: (
@@ -46,17 +46,17 @@ export default function About() {
           <div>
             <p className="text-xs uppercase tracking-widest text-violet-400 font-medium mb-4">Who we are</p>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
-              Engineering the AI era,{" "}
+              Building with AI,{" "}
               <span className="text-white/40">one product at a time.</span>
             </h2>
             <p className="text-white/50 leading-relaxed mb-5">
-              Codevolve Pty Ltd is an AI product company on a mission to reshape how software is built. We believe the
-              next generation of development tools will be intelligent, contextual, and deeply integrated into the
-              engineering process.
+              Codevolve Pty Ltd is an AI product company on a mission to create products that genuinely change how
+              people work. We use AI not as a feature, but as the foundation — building tools that are intelligent,
+              adaptive, and immediately useful.
             </p>
             <p className="text-white/50 leading-relaxed">
-              We build across a range of use cases — from developer productivity and code quality to automated workflows
-              and intelligent systems — all unified by a single goal: making great software easier to create.
+              We build across a range of industries and use cases — from commerce and deals to software and automation —
+              all unified by a single goal: making hard things easy through AI.
             </p>
           </div>
 
