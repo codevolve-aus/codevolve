@@ -17,7 +17,7 @@ export default function Contact() {
 
         <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
           <a
-            href="mailto:info@codevolve.com.au"
+            href="mailto:support@codevolve.com.au"
             className="group flex items-center gap-3 px-7 py-3.5 rounded-full bg-gradient-to-r from-violet-600 to-cyan-500 text-white font-medium text-sm hover:opacity-90 transition-all duration-200 hover:scale-105 shadow-lg shadow-violet-900/30"
           >
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -29,7 +29,7 @@ export default function Contact() {
                 strokeLinejoin="round"
               />
             </svg>
-            info@codevolve.com.au
+            support@codevolve.com.au
           </a>
 
           <a
