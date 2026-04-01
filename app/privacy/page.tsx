@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — dealZ by Codevolve",
+  title: "Privacy Policy — Scout by Codevolve",
   description:
-    "Privacy Policy for dealZ, an AI-powered deals platform by Codevolve Pty Ltd. Learn how we collect, use, and protect your personal information.",
+    "Privacy Policy for Scout, an AI-powered deals discovery platform by Codevolve Pty Ltd. Learn how we collect, use, and protect your personal information.",
 };
 
 export default function PrivacyPolicy() {
@@ -19,7 +19,7 @@ export default function PrivacyPolicy() {
             </div>
             <span className="font-semibold text-white text-lg tracking-tight">Codevolve</span>
           </Link>
-          <span className="text-sm text-white/30 font-medium tracking-wide uppercase">dealZ</span>
+          <span className="text-sm text-white/30 font-medium tracking-wide uppercase">Scout</span>
         </div>
       </header>
 
@@ -46,11 +46,11 @@ export default function PrivacyPolicy() {
               This Privacy Policy describes how <strong className="text-white">Codevolve Pty Ltd</strong> (ABN to be confirmed)
               (&ldquo;Codevolve&rdquo;, &ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;), operating from Australia, collects,
               uses, discloses, and safeguards your personal information when you use{" "}
-              <strong className="text-white">dealZ</strong> — our AI-powered deals and commerce platform
+              <strong className="text-white">Scout</strong> — our AI-powered deals and commerce platform
               (the &ldquo;App&rdquo; or &ldquo;Service&rdquo;).
             </p>
             <p className="mt-4">
-              By downloading, installing, or using dealZ, you agree to the practices described in this policy.
+              By downloading, installing, or using Scout, you agree to the practices described in this policy.
               If you do not agree, please do not use the Service.
             </p>
             <p className="mt-4">
@@ -97,7 +97,7 @@ export default function PrivacyPolicy() {
             <p>We use the information we collect to:</p>
             <ul className="list-disc pl-6 space-y-2 mt-3">
               <li>Create and manage your account and authenticate your identity.</li>
-              <li>Provide, personalise, and improve the dealZ Service, including AI-powered deal recommendations.</li>
+              <li>Provide, personalise, and improve the Scout Service, including AI-powered deal recommendations.</li>
               <li>Verify business registrations via ABN lookup.</li>
               <li>Show you deals and offers relevant to your location and preferences.</li>
               <li>Process and facilitate transactions within the App.</li>
@@ -122,7 +122,7 @@ export default function PrivacyPolicy() {
                 These parties process data only on our behalf under data processing agreements.
               </li>
               <li>
-                <strong className="text-white">Other users:</strong> your public profile, posted deals, and reviews are visible to other users of dealZ.
+                <strong className="text-white">Other users:</strong> your public profile, posted deals, and reviews are visible to other users of Scout.
               </li>
               <li>
                 <strong className="text-white">Business verification:</strong> ABN data is validated against the publicly available ABR dataset.
@@ -204,7 +204,7 @@ export default function PrivacyPolicy() {
           <section>
             <SectionTitle number="7" title="Children's Privacy" />
             <p>
-              dealZ is not directed at children under the age of 13. We do not knowingly collect personal information
+              Scout is not directed at children under the age of 13. We do not knowingly collect personal information
               from children under 13. If we become aware that we have collected such information, we will delete it promptly.
               If you believe a child has provided us with personal information, please contact us immediately.
             </p>
@@ -216,7 +216,7 @@ export default function PrivacyPolicy() {
           <section>
             <SectionTitle number="8" title="Third-Party Links and Services" />
             <p>
-              dealZ may contain links to third-party websites or services. This Privacy Policy does not apply to those
+              Scout may contain links to third-party websites or services. This Privacy Policy does not apply to those
               third parties, and we are not responsible for their privacy practices. We encourage you to review the
               privacy policies of any third-party services you access.
             </p>
@@ -230,7 +230,7 @@ export default function PrivacyPolicy() {
             <p>
               We may update this Privacy Policy from time to time. When we make material changes, we will notify you
               via in-app notification or email at least 14 days before the changes take effect. Continued use of
-              dealZ after the effective date constitutes acceptance of the updated policy.
+              Scout after the effective date constitutes acceptance of the updated policy.
             </p>
           </section>
 
@@ -279,7 +279,7 @@ export default function PrivacyPolicy() {
             <Link href="https://codevolve.com.au" className="hover:text-white/60 transition-colors">
               codevolve.com.au
             </Link>
-            <Link href="https://dealz.codevolve.com.au/terms" className="hover:text-white/60 transition-colors">
+            <Link href="https://scout.codevolve.com.au/terms" className="hover:text-white/60 transition-colors">
               Terms of Service
             </Link>
           </div>

@@ -1,7 +1,7 @@
 const products = [
   {
     tag: "AI Commerce",
-    title: "dealZ",
+    title: "Scout",
     description:
       "AI-powered deals platform that surfaces the best offers, matches buyers with sellers intelligently, and automates negotiation — so you always close at the right price.",
     status: "Live",

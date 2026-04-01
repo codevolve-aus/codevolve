@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — dealZ by Codevolve",
+  title: "Terms of Service — Scout by Codevolve",
   description:
-    "Terms of Service for dealZ, an AI-powered deals platform by Codevolve Pty Ltd. Understand your rights and responsibilities when using dealZ.",
+    "Terms of Service for Scout, an AI-powered deals discovery platform by Codevolve Pty Ltd. Understand your rights and responsibilities when using Scout.",
 };
 
 export default function TermsOfService() {
@@ -19,7 +19,7 @@ export default function TermsOfService() {
             </div>
             <span className="font-semibold text-white text-lg tracking-tight">Codevolve</span>
           </Link>
-          <span className="text-sm text-white/30 font-medium tracking-wide uppercase">dealZ</span>
+          <span className="text-sm text-white/30 font-medium tracking-wide uppercase">Scout</span>
         </div>
       </header>
 
@@ -44,12 +44,12 @@ export default function TermsOfService() {
           <section>
             <p>
               These Terms of Service (&ldquo;Terms&rdquo;) govern your access to and use of{" "}
-              <strong className="text-white">dealZ</strong>, an AI-powered deals and commerce platform
+              <strong className="text-white">Scout</strong>, an AI-powered deals and commerce platform
               operated by <strong className="text-white">Codevolve Pty Ltd</strong> (&ldquo;Codevolve&rdquo;,
               &ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;), incorporated in Australia.
             </p>
             <p className="mt-4">
-              By creating an account or using dealZ, you confirm that you are at least 18 years old (or have
+              By creating an account or using Scout, you confirm that you are at least 18 years old (or have
               parental consent if aged 13–17), that you have read and understood these Terms, and that you
               agree to be bound by them. If you do not agree, do not use the Service.
             </p>
@@ -65,7 +65,7 @@ export default function TermsOfService() {
           <section>
             <SectionTitle number="1" title="The Service" />
             <p>
-              dealZ is a mobile application and platform that connects consumers with businesses to discover,
+              Scout is a mobile application and platform that connects consumers with businesses to discover,
               share, and redeem deals and offers. The Service includes AI-powered personalisation, business
               listings, deal management tools, and associated features.
             </p>
@@ -80,7 +80,7 @@ export default function TermsOfService() {
           {/* 2 */}
           <section>
             <SectionTitle number="2" title="Account Registration" />
-            <p>To use most features of dealZ, you must create an account. You agree to:</p>
+            <p>To use most features of Scout, you must create an account. You agree to:</p>
             <ul className="list-disc pl-6 space-y-2 mt-3">
               <li>Provide accurate, current, and complete information during registration.</li>
               <li>Maintain and promptly update your account information.</li>
@@ -104,7 +104,7 @@ export default function TermsOfService() {
           {/* 3 */}
           <section>
             <SectionTitle number="3" title="User Conduct" />
-            <p>You agree not to use dealZ to:</p>
+            <p>You agree not to use Scout to:</p>
             <ul className="list-disc pl-6 space-y-2 mt-3">
               <li>Post false, misleading, fraudulent, or deceptive deals or content.</li>
               <li>Violate any applicable Australian or international law or regulation.</li>
@@ -129,7 +129,7 @@ export default function TermsOfService() {
           <section>
             <SectionTitle number="4" title="Business Accounts and Listings" />
             <p>
-              Businesses registering on dealZ must hold a valid Australian Business Number (ABN) which will
+              Businesses registering on Scout must hold a valid Australian Business Number (ABN) which will
               be verified through the ABR. By registering as a business, you represent and warrant that:
             </p>
             <ul className="list-disc pl-6 space-y-2 mt-3">
@@ -152,7 +152,7 @@ export default function TermsOfService() {
           <section>
             <SectionTitle number="5" title="User Content" />
             <p>
-              You retain ownership of content you post on dealZ (&ldquo;User Content&rdquo;). By posting User Content,
+              You retain ownership of content you post on Scout (&ldquo;User Content&rdquo;). By posting User Content,
               you grant Codevolve a non-exclusive, royalty-free, worldwide, sublicensable licence to use,
               reproduce, modify, distribute, display, and create derivative works from your User Content
               solely to operate and improve the Service.
@@ -175,7 +175,7 @@ export default function TermsOfService() {
           <section>
             <SectionTitle number="6" title="Intellectual Property" />
             <p>
-              The dealZ app, its design, logo, AI features, source code, and all content produced by
+              The Scout app, its design, logo, AI features, source code, and all content produced by
               Codevolve (excluding User Content) are owned by or licensed to Codevolve Pty Ltd and are
               protected by Australian and international intellectual property laws.
             </p>
@@ -192,8 +192,8 @@ export default function TermsOfService() {
           <section>
             <SectionTitle number="7" title="Privacy" />
             <p>
-              Your use of dealZ is also governed by our{" "}
-              <Link href="https://dealz.codevolve.com.au/privacy" className="text-cyan-400 hover:text-cyan-300 transition-colors">
+              Your use of Scout is also governed by our{" "}
+              <Link href="https://scout.codevolve.com.au/privacy" className="text-cyan-400 hover:text-cyan-300 transition-colors">
                 Privacy Policy
               </Link>
               , which is incorporated into these Terms by reference. By using the Service, you consent to
@@ -207,7 +207,7 @@ export default function TermsOfService() {
           <section>
             <SectionTitle number="8" title="Disclaimers" />
             <p>
-              To the maximum extent permitted by Australian law, dealZ is provided &ldquo;as is&rdquo; and &ldquo;as available&rdquo;
+              To the maximum extent permitted by Australian law, Scout is provided &ldquo;as is&rdquo; and &ldquo;as available&rdquo;
               without warranties of any kind, either express or implied.
             </p>
             <p className="mt-4">We do not warrant that:</p>
@@ -323,7 +323,7 @@ export default function TermsOfService() {
             <Link href="https://codevolve.com.au" className="hover:text-white/60 transition-colors">
               codevolve.com.au
             </Link>
-            <Link href="https://dealz.codevolve.com.au/privacy" className="hover:text-white/60 transition-colors">
+            <Link href="https://scout.codevolve.com.au/privacy" className="hover:text-white/60 transition-colors">
               Privacy Policy
             </Link>
           </div>
