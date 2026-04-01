@@ -14,6 +14,8 @@ export default function Footer() {
           <a href="#about" className="hover:text-white/60 transition-colors">About</a>
           <a href="#products" className="hover:text-white/60 transition-colors">Products</a>
           <a href="#contact" className="hover:text-white/60 transition-colors">Contact</a>
+          <a href="https://privacy.codevolve.com.au" className="hover:text-white/60 transition-colors">Privacy</a>
+          <a href="https://terms.codevolve.com.au" className="hover:text-white/60 transition-colors">Terms</a>
         </div>
       </div>
     </footer>
