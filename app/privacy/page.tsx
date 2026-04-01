@@ -279,7 +279,7 @@ export default function PrivacyPolicy() {
             <Link href="https://codevolve.com.au" className="hover:text-white/60 transition-colors">
               codevolve.com.au
             </Link>
-            <Link href="https://terms.codevolve.com.au" className="hover:text-white/60 transition-colors">
+            <Link href="https://dealz.codevolve.com.au/terms" className="hover:text-white/60 transition-colors">
               Terms of Service
             </Link>
           </div>

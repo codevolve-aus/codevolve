@@ -193,7 +193,7 @@ export default function TermsOfService() {
             <SectionTitle number="7" title="Privacy" />
             <p>
               Your use of dealZ is also governed by our{" "}
-              <Link href="https://privacy.codevolve.com.au" className="text-cyan-400 hover:text-cyan-300 transition-colors">
+              <Link href="https://dealz.codevolve.com.au/privacy" className="text-cyan-400 hover:text-cyan-300 transition-colors">
                 Privacy Policy
               </Link>
               , which is incorporated into these Terms by reference. By using the Service, you consent to
@@ -323,7 +323,7 @@ export default function TermsOfService() {
             <Link href="https://codevolve.com.au" className="hover:text-white/60 transition-colors">
               codevolve.com.au
             </Link>
-            <Link href="https://privacy.codevolve.com.au" className="hover:text-white/60 transition-colors">
+            <Link href="https://dealz.codevolve.com.au/privacy" className="hover:text-white/60 transition-colors">
               Privacy Policy
             </Link>
           </div>
