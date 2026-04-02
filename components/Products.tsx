@@ -8,6 +8,7 @@ const products = [
     gradient: "from-orange-600/20 to-amber-600/10",
     accent: "orange",
     features: ["AI-powered deal discovery", "Smart price matching", "Automated deal workflows"],
+    url: "https://scout.codevolve.com.au",
   },
   {
     tag: "Developer Productivity",
@@ -18,6 +19,7 @@ const products = [
     gradient: "from-violet-600/20 to-fuchsia-600/10",
     accent: "violet",
     features: ["Semantic diff analysis", "Security vulnerability detection", "Style & pattern enforcement"],
+    url: null,
   },
   {
     tag: "Workflow Automation",
@@ -28,6 +30,7 @@ const products = [
     gradient: "from-cyan-600/20 to-blue-600/10",
     accent: "cyan",
     features: ["Issue triage & categorization", "Test generation", "Documentation automation"],
+    url: null,
   },
   {
     tag: "Platform Intelligence",
@@ -38,6 +41,7 @@ const products = [
     gradient: "from-emerald-600/20 to-teal-600/10",
     accent: "emerald",
     features: ["Complexity heatmaps", "Tech debt scoring", "Team velocity trends"],
+    url: null,
   },
 ];
 
@@ -99,7 +103,7 @@ export default function Products() {
               <p className="text-white/45 text-sm leading-relaxed mb-6 flex-1">{product.description}</p>
 
               {/* Features */}
-              <ul className="flex flex-col gap-2">
+              <ul className="flex flex-col gap-2 mb-5">
                 {product.features.map((f) => (
                   <li key={f} className="flex items-center gap-2 text-xs text-white/40">
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
@@ -115,6 +119,21 @@ export default function Products() {
                   </li>
                 ))}
               </ul>
+
+              {/* Link */}
+              {product.url && (
+                <a
+                  href={product.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1.5 text-xs font-medium text-orange-400 hover:text-orange-300 transition-colors"
+                >
+                  Visit Scout
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <path d="M2.5 9.5l7-7M4 2.5h5.5v5.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </a>
+              )}
             </div>
           ))}
         </div>
