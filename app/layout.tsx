@@ -17,6 +17,10 @@ export const metadata: Metadata = {
   description:
     "Codevolve Pty Ltd builds AI-powered products across industries. From commerce to software, we create intelligent products that evolve how people work.",
   keywords: ["AI", "artificial intelligence", "AI products", "dealZ", "commerce", "software"],
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+  },
   openGraph: {
     title: "Codevolve — Building with AI",
     description: "Building AI-powered products that change how people work.",
