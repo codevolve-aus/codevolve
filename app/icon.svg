@@ -4,31 +4,17 @@
 
   <defs>
     <!-- Violet → cyan — matches site hero gradient -->
-    <linearGradient id="g" x1="4" y1="4" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+    <linearGradient id="g" x1="3" y1="3" x2="29" y2="29" gradientUnits="userSpaceOnUse">
       <stop offset="0%"   stop-color="#8B5CF6"/>
       <stop offset="100%" stop-color="#22D3EE"/>
     </linearGradient>
   </defs>
 
-  <!-- Bold C — open arc, flat cut ends for a geometric/tech feel -->
-  <path
-    d="M23 11C21.1 8.6 18.7 7.5 16 7.5C10.8 7.5 6.5 11.5 6.5 16C6.5 20.5 10.8 24.5 16 24.5C18.7 24.5 21.1 23.4 23 21"
-    stroke="url(#g)"
-    stroke-width="3.2"
-    stroke-linecap="square"
-  />
+  <!-- C: bezier curve, opens to the right -->
+  <path d="M16 7Q3 7 3 16Q3 25 16 25"
+        stroke="url(#g)" stroke-width="2.8" stroke-linecap="round" fill="none"/>
 
-  <!-- Small forward tick at top — suggests evolution / forward motion -->
-  <path
-    d="M23 11L26.5 9"
-    stroke="url(#g)"
-    stroke-width="3.2"
-    stroke-linecap="square"
-  />
-  <path
-    d="M23 21L26.5 23"
-    stroke="url(#g)"
-    stroke-width="3.2"
-    stroke-linecap="square"
-  />
+  <!-- V: two angled strokes meeting at a bottom point -->
+  <path d="M19 7L24.5 25L30 7"
+        stroke="url(#g)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
 </svg>
