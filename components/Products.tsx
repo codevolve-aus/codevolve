@@ -11,6 +11,17 @@ const products = [
     url: "https://scout.codevolve.com.au",
   },
   {
+    tag: "Rental Management",
+    title: "HireMe",
+    description:
+      "End-to-end rental management platform for operators — list inventory, manage bookings with customer details, track payments, and get revenue insights across multiple branches from one dashboard.",
+    status: "Live",
+    gradient: "from-blue-600/20 to-indigo-600/10",
+    accent: "blue",
+    features: ["Multi-branch revenue tracking", "Inventory & availability management", "Booking lifecycle & payment capture"],
+    url: null,
+  },
+  {
     tag: "Developer Productivity",
     title: "AI-Powered Code Review",
     description:
@@ -46,17 +57,19 @@ const products = [
 ];
 
 const accentColors: Record<string, string> = {
-  orange: "text-orange-400 border-orange-500/30 bg-orange-500/10",
-  violet: "text-violet-400 border-violet-500/30 bg-violet-500/10",
-  cyan: "text-cyan-400 border-cyan-500/30 bg-cyan-500/10",
+  orange:  "text-orange-400 border-orange-500/30 bg-orange-500/10",
+  violet:  "text-violet-400 border-violet-500/30 bg-violet-500/10",
+  cyan:    "text-cyan-400 border-cyan-500/30 bg-cyan-500/10",
   emerald: "text-emerald-400 border-emerald-500/30 bg-emerald-500/10",
+  blue:    "text-blue-400 border-blue-500/30 bg-blue-500/10",
 };
 
 const dotColors: Record<string, string> = {
-  orange: "bg-orange-400",
-  violet: "bg-violet-400",
-  cyan: "bg-cyan-400",
+  orange:  "bg-orange-400",
+  violet:  "bg-violet-400",
+  cyan:    "bg-cyan-400",
   emerald: "bg-emerald-400",
+  blue:    "bg-blue-400",
 };
 
 export default function Products() {
@@ -126,9 +139,14 @@ export default function Products() {
                   href={product.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs font-medium text-orange-400 hover:text-orange-300 transition-colors"
+                  className={`inline-flex items-center gap-1.5 text-xs font-medium transition-colors ${
+                    product.accent === "orange" ? "text-orange-400 hover:text-orange-300" :
+                    product.accent === "blue"   ? "text-blue-400 hover:text-blue-300"     :
+                    product.accent === "cyan"   ? "text-cyan-400 hover:text-cyan-300"     :
+                    "text-violet-400 hover:text-violet-300"
+                  }`}
                 >
-                  Visit Scout
+                  Visit {product.title}
                   <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
                     <path d="M2.5 9.5l7-7M4 2.5h5.5v5.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
