@@ -32,7 +32,7 @@ export default function Hero() {
         </h1>
 
         <p className="text-lg md:text-xl text-white/50 max-w-2xl mx-auto mb-10 leading-relaxed">
-          Codevolve builds AI-powered products that transform industries — creating smarter experiences and unlocking new
+          CodeVolve builds AI-powered products that transform industries — creating smarter experiences and unlocking new
           possibilities across commerce, software, and beyond.
         </p>
 

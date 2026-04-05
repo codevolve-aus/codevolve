@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Scout by Codevolve",
+  title: "Privacy Policy — Scout by CodeVolve",
   description:
-    "Privacy Policy for Scout, an AI-powered deals discovery platform by Codevolve Pty Ltd. Learn how we collect, use, and protect your personal information.",
+    "Privacy Policy for Scout, an AI-powered deals discovery platform by CodeVolve Pty Ltd. Learn how we collect, use, and protect your personal information.",
 };
 
 export default function PrivacyPolicy() {
@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-500 to-cyan-400 flex items-center justify-center text-white font-bold text-sm">
               CV
             </div>
-            <span className="font-semibold text-white text-lg tracking-tight">Codevolve</span>
+            <span className="font-semibold text-white text-lg tracking-tight">CodeVolve</span>
           </Link>
           <span className="text-sm text-white/30 font-medium tracking-wide uppercase">Scout</span>
         </div>
@@ -43,8 +43,8 @@ export default function PrivacyPolicy() {
           {/* Intro */}
           <section>
             <p>
-              This Privacy Policy describes how <strong className="text-white">Codevolve Pty Ltd</strong> (ABN to be confirmed)
-              (&ldquo;Codevolve&rdquo;, &ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;), operating from Australia, collects,
+              This Privacy Policy describes how <strong className="text-white">CodeVolve Pty Ltd</strong> (ABN to be confirmed)
+              (&ldquo;CodeVolve&rdquo;, &ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;), operating from Australia, collects,
               uses, discloses, and safeguards your personal information when you use{" "}
               <strong className="text-white">Scout</strong> — our AI-powered deals and commerce platform
               (the &ldquo;App&rdquo; or &ldquo;Service&rdquo;).
@@ -128,7 +128,7 @@ export default function PrivacyPolicy() {
                 <strong className="text-white">Business verification:</strong> ABN data is validated against the publicly available ABR dataset.
               </li>
               <li>
-                <strong className="text-white">Legal authorities:</strong> when required by law, court order, or to protect the rights and safety of Codevolve, our users, or the public.
+                <strong className="text-white">Legal authorities:</strong> when required by law, court order, or to protect the rights and safety of CodeVolve, our users, or the public.
               </li>
               <li>
                 <strong className="text-white">Business transfers:</strong> in the event of a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction. We will notify you via email or prominent in-app notice.
@@ -241,7 +241,7 @@ export default function PrivacyPolicy() {
             <SectionTitle number="10" title="Contact Us" />
             <p>For privacy-related questions, complaints, or requests:</p>
             <div className="mt-4 p-6 rounded-2xl bg-white/[0.03] border border-white/5 space-y-2 text-sm">
-              <p><strong className="text-white">Codevolve Pty Ltd</strong></p>
+              <p><strong className="text-white">CodeVolve Pty Ltd</strong></p>
               <p>Australia</p>
               <p>
                 Email:{" "}
@@ -274,7 +274,7 @@ export default function PrivacyPolicy() {
       {/* Footer */}
       <footer className="border-t border-white/5 px-6 py-8 mt-10">
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-white/25 text-sm">
-          <span>&copy; {new Date().getFullYear()} Codevolve Pty Ltd. All rights reserved.</span>
+          <span>&copy; {new Date().getFullYear()} CodeVolve Pty Ltd. All rights reserved.</span>
           <div className="flex items-center gap-6">
             <Link href="https://codevolve.com.au" className="hover:text-white/60 transition-colors">
               codevolve.com.au

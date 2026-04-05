@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Delete Account — Scout by Codevolve",
+  title: "Delete Account — Scout by CodeVolve",
   description:
     "Request deletion of your Scout account and associated data. Learn what data is deleted and how to submit a deletion request.",
 };
@@ -17,7 +17,7 @@ export default function DeleteAccount() {
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-500 to-cyan-400 flex items-center justify-center text-white font-bold text-sm">
               CV
             </div>
-            <span className="font-semibold text-white text-lg tracking-tight">Codevolve</span>
+            <span className="font-semibold text-white text-lg tracking-tight">CodeVolve</span>
           </Link>
           <span className="text-sm text-white/30 font-medium tracking-wide uppercase">Scout</span>
         </div>
@@ -148,7 +148,7 @@ export default function DeleteAccount() {
               For any privacy-related questions or concerns, contact us at:
             </p>
             <div className="mt-4 p-6 rounded-2xl bg-white/[0.03] border border-white/5 space-y-2 text-sm">
-              <p><strong className="text-white">Codevolve Pty Ltd</strong></p>
+              <p><strong className="text-white">CodeVolve Pty Ltd</strong></p>
               <p>Australia</p>
               <p>
                 Email:{" "}
@@ -171,7 +171,7 @@ export default function DeleteAccount() {
       {/* Footer */}
       <footer className="border-t border-white/5 px-6 py-8 mt-10">
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-white/25 text-sm">
-          <span>&copy; {new Date().getFullYear()} Codevolve Pty Ltd. All rights reserved.</span>
+          <span>&copy; {new Date().getFullYear()} CodeVolve Pty Ltd. All rights reserved.</span>
           <div className="flex items-center gap-6">
             <Link href="https://codevolve.com.au" className="hover:text-white/60 transition-colors">
               codevolve.com.au

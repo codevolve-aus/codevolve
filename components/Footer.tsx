@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="w-6 h-6 rounded-md bg-gradient-to-br from-violet-500 to-cyan-400 flex items-center justify-center text-white font-bold text-[10px]">
             CV
           </div>
-          <span>&copy; {year} Codevolve Pty Ltd. All rights reserved.</span>
+          <span>&copy; {year} CodeVolve Pty Ltd. All rights reserved.</span>
         </div>
         <div className="flex items-center gap-6">
           <a href="#about" className="hover:text-white/60 transition-colors">About</a>

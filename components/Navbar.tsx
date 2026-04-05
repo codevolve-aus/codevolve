@@ -29,7 +29,7 @@ export default function Navbar() {
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-500 to-cyan-400 flex items-center justify-center text-white font-bold text-sm">
             CV
           </div>
-          <span className="font-semibold text-white text-lg tracking-tight">Codevolve</span>
+          <span className="font-semibold text-white text-lg tracking-tight">CodeVolve</span>
         </a>
 
         {/* Desktop nav */}

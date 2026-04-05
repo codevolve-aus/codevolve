@@ -28,7 +28,7 @@ export default function ScoutLanding() {
             <span className="font-bold text-white text-lg tracking-tight">Scout</span>
             <span className="text-white/20 text-sm">by</span>
             <Link href="https://codevolve.com.au" className="text-white/40 hover:text-white/70 text-sm transition-colors">
-              Codevolve
+              CodeVolve
             </Link>
           </div>
           <div className="flex items-center gap-4">
@@ -226,13 +226,13 @@ export default function ScoutLanding() {
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-white/25 text-sm">
           <div className="flex items-center gap-2">
             <div className="w-5 h-5 rounded bg-gradient-to-br from-violet-500 to-cyan-400" />
-            <span>&copy; {new Date().getFullYear()} Codevolve Pty Ltd. All rights reserved.</span>
+            <span>&copy; {new Date().getFullYear()} CodeVolve Pty Ltd. All rights reserved.</span>
           </div>
           <div className="flex items-center gap-6">
             <Link href="/privacy" className="hover:text-white/60 transition-colors">Privacy Policy</Link>
             <Link href="/terms" className="hover:text-white/60 transition-colors">Terms of Service</Link>
             <Link href="/delete-account" className="hover:text-white/60 transition-colors">Delete Account</Link>
-            <Link href="https://codevolve.com.au" className="hover:text-white/60 transition-colors">Codevolve</Link>
+            <Link href="https://codevolve.com.au" className="hover:text-white/60 transition-colors">CodeVolve</Link>
           </div>
         </div>
       </footer>

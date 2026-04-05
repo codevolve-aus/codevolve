@@ -50,7 +50,7 @@ export default function About() {
               <span className="text-white/40">one product at a time.</span>
             </h2>
             <p className="text-white/50 leading-relaxed mb-5">
-              Codevolve Pty Ltd is an AI product company on a mission to create products that genuinely change how
+              CodeVolve Pty Ltd is an AI product company on a mission to create products that genuinely change how
               people work. We use AI not as a feature, but as the foundation — building tools that are intelligent,
               adaptive, and immediately useful.
             </p>

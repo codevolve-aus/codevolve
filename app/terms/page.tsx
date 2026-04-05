@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — Scout by Codevolve",
+  title: "Terms of Service — Scout by CodeVolve",
   description:
-    "Terms of Service for Scout, an AI-powered deals discovery platform by Codevolve Pty Ltd. Understand your rights and responsibilities when using Scout.",
+    "Terms of Service for Scout, an AI-powered deals discovery platform by CodeVolve Pty Ltd. Understand your rights and responsibilities when using Scout.",
 };
 
 export default function TermsOfService() {
@@ -17,7 +17,7 @@ export default function TermsOfService() {
             <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-500 to-cyan-400 flex items-center justify-center text-white font-bold text-sm">
               CV
             </div>
-            <span className="font-semibold text-white text-lg tracking-tight">Codevolve</span>
+            <span className="font-semibold text-white text-lg tracking-tight">CodeVolve</span>
           </Link>
           <span className="text-sm text-white/30 font-medium tracking-wide uppercase">Scout</span>
         </div>
@@ -45,7 +45,7 @@ export default function TermsOfService() {
             <p>
               These Terms of Service (&ldquo;Terms&rdquo;) govern your access to and use of{" "}
               <strong className="text-white">Scout</strong>, an AI-powered deals and commerce platform
-              operated by <strong className="text-white">Codevolve Pty Ltd</strong> (&ldquo;Codevolve&rdquo;,
+              operated by <strong className="text-white">CodeVolve Pty Ltd</strong> (&ldquo;CodeVolve&rdquo;,
               &ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;), incorporated in Australia.
             </p>
             <p className="mt-4">
@@ -54,7 +54,7 @@ export default function TermsOfService() {
               agree to be bound by them. If you do not agree, do not use the Service.
             </p>
             <p className="mt-4">
-              These Terms are a legally binding agreement between you and Codevolve Pty Ltd, governed by the
+              These Terms are a legally binding agreement between you and CodeVolve Pty Ltd, governed by the
               laws of New South Wales, Australia.
             </p>
           </section>
@@ -114,7 +114,7 @@ export default function TermsOfService() {
               <li>Attempt to gain unauthorised access to any part of the Service or another user&rsquo;s account.</li>
               <li>Upload malware, viruses, or any malicious code.</li>
               <li>Impersonate any person or entity or misrepresent your affiliation with a business.</li>
-              <li>Infringe any intellectual property rights of Codevolve or third parties.</li>
+              <li>Infringe any intellectual property rights of CodeVolve or third parties.</li>
               <li>Use the Service in any way that could damage, disable, or impair it.</li>
             </ul>
             <p className="mt-4">
@@ -140,7 +140,7 @@ export default function TermsOfService() {
               <li>You will promptly remove expired, unavailable, or erroneous deals.</li>
             </ul>
             <p className="mt-4">
-              Codevolve is not a party to any transaction between users and businesses. We are a platform
+              CodeVolve is not a party to any transaction between users and businesses. We are a platform
               intermediary and accept no liability for the quality, safety, legality, or availability of
               any deal or product listed on the Service.
             </p>
@@ -153,7 +153,7 @@ export default function TermsOfService() {
             <SectionTitle number="5" title="User Content" />
             <p>
               You retain ownership of content you post on Scout (&ldquo;User Content&rdquo;). By posting User Content,
-              you grant Codevolve a non-exclusive, royalty-free, worldwide, sublicensable licence to use,
+              you grant CodeVolve a non-exclusive, royalty-free, worldwide, sublicensable licence to use,
               reproduce, modify, distribute, display, and create derivative works from your User Content
               solely to operate and improve the Service.
             </p>
@@ -176,7 +176,7 @@ export default function TermsOfService() {
             <SectionTitle number="6" title="Intellectual Property" />
             <p>
               The Scout app, its design, logo, AI features, source code, and all content produced by
-              Codevolve (excluding User Content) are owned by or licensed to Codevolve Pty Ltd and are
+              CodeVolve (excluding User Content) are owned by or licensed to CodeVolve Pty Ltd and are
               protected by Australian and international intellectual property laws.
             </p>
             <p className="mt-4">
@@ -228,9 +228,9 @@ export default function TermsOfService() {
           <section>
             <SectionTitle number="9" title="Limitation of Liability" />
             <p>
-              To the extent permitted by law, Codevolve&rsquo;s total liability to you for any loss or damage
+              To the extent permitted by law, CodeVolve&rsquo;s total liability to you for any loss or damage
               arising out of or in connection with the Service (whether in contract, tort, statute, or
-              otherwise) is limited to the greater of AUD $100 or the amount you paid to Codevolve in the
+              otherwise) is limited to the greater of AUD $100 or the amount you paid to CodeVolve in the
               12 months preceding the claim.
             </p>
             <p className="mt-4">
@@ -250,7 +250,7 @@ export default function TermsOfService() {
           <section>
             <SectionTitle number="10" title="Termination" />
             <p>
-              You may delete your account at any time through the app settings. Codevolve may suspend or
+              You may delete your account at any time through the app settings. CodeVolve may suspend or
               terminate your access to the Service at any time, with or without cause, with reasonable
               notice where practicable.
             </p>
@@ -296,7 +296,7 @@ export default function TermsOfService() {
             <SectionTitle number="13" title="Contact Us" />
             <p>For questions about these Terms:</p>
             <div className="mt-4 p-6 rounded-2xl bg-white/[0.03] border border-white/5 space-y-2 text-sm">
-              <p><strong className="text-white">Codevolve Pty Ltd</strong></p>
+              <p><strong className="text-white">CodeVolve Pty Ltd</strong></p>
               <p>Australia</p>
               <p>
                 Email:{" "}
@@ -318,7 +318,7 @@ export default function TermsOfService() {
       {/* Footer */}
       <footer className="border-t border-white/5 px-6 py-8 mt-10">
         <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-white/25 text-sm">
-          <span>&copy; {new Date().getFullYear()} Codevolve Pty Ltd. All rights reserved.</span>
+          <span>&copy; {new Date().getFullYear()} CodeVolve Pty Ltd. All rights reserved.</span>
           <div className="flex items-center gap-6">
             <Link href="https://codevolve.com.au" className="hover:text-white/60 transition-colors">
               codevolve.com.au
