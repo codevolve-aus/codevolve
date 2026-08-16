@@ -1,6 +1,8 @@
 import { Suspense } from "react";
 import { UserButton } from "@clerk/nextjs";
 import Sidebar from "@/components/admin/Sidebar";
+import ClerkNotConfigured from "@/components/ClerkNotConfigured";
+import { isClerkConfigured } from "@/lib/clerk-config";
 import { verifyAdmin } from "@/lib/admin";
 
 // Same Suspense-wrapped AuthGate pattern as app/dashboard/layout.tsx — Cache Components
@@ -20,6 +22,8 @@ function AdminSkeleton() {
 }
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
+  if (!isClerkConfigured()) return <ClerkNotConfigured />;
+
   return (
     <div className="flex min-h-screen bg-background">
       <Sidebar />

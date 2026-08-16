@@ -31,6 +31,7 @@ import {
 import { getDb } from "@/src/db";
 import { tracks } from "@/src/db/schema";
 import { STAGE_ORDER, STAGE_META } from "@/lib/evolution";
+import { isClerkConfigured } from "@/lib/clerk-config";
 import {
   updateTrack,
   createModule,
@@ -59,6 +60,9 @@ export async function generateMetadata({
 }: {
   params: Promise<{ id: string }>;
 }): Promise<Metadata> {
+  // Keep this static when Clerk isn't configured — admin/layout.tsx bails out to a fully
+  // static notice in that case, so this must not be the route's only dynamic data access.
+  if (!isClerkConfigured()) return { title: "Track · Admin" };
   const { id } = await params;
   const track = await getTrackForEdit(id);
   return { title: track ? `${track.title} · Admin` : "Track · Admin" };
