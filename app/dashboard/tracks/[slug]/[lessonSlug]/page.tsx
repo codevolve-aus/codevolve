@@ -6,6 +6,7 @@ import { LessonMarkdown } from "@/lib/markdown";
 import { getTrackBySlug, getAllLessons, getLessonBySlug } from "@/lib/content";
 import { getTrackDashboard, isDbConfigured } from "@/lib/dal";
 import DbNotConfigured from "@/components/dashboard/DbNotConfigured";
+import { isClerkConfigured } from "@/lib/clerk-config";
 import { markLessonComplete } from "./actions";
 
 export async function generateMetadata({
@@ -13,6 +14,9 @@ export async function generateMetadata({
 }: {
   params: Promise<{ slug: string; lessonSlug: string }>;
 }): Promise<Metadata> {
+  // Keep this static when Clerk isn't configured — dashboard/layout.tsx bails out to a fully
+  // static notice in that case, so this must not be the route's only dynamic data access.
+  if (!isClerkConfigured()) return { title: "Lesson" };
   const { slug, lessonSlug } = await params;
   const track = await getTrackBySlug(slug, { includeDisabled: true });
   const found = track ? getLessonBySlug(track, lessonSlug) : undefined;

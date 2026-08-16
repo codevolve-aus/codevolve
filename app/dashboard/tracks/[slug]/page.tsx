@@ -6,6 +6,7 @@ import { STAGE_META } from "@/lib/evolution";
 import { getTrackBySlug, nextIncompleteLesson } from "@/lib/content";
 import { getTrackDashboard, isDbConfigured } from "@/lib/dal";
 import DbNotConfigured from "@/components/dashboard/DbNotConfigured";
+import { isClerkConfigured } from "@/lib/clerk-config";
 import { enrollInTrack } from "./actions";
 
 export async function generateMetadata({
@@ -13,6 +14,9 @@ export async function generateMetadata({
 }: {
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
+  // Keep this static when Clerk isn't configured — dashboard/layout.tsx bails out to a fully
+  // static notice in that case, so this must not be the route's only dynamic data access.
+  if (!isClerkConfigured()) return { title: "Track" };
   const { slug } = await params;
   const track = await getTrackBySlug(slug, { includeDisabled: true });
   return { title: track?.title ?? "Track" };

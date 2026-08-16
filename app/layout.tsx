@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { isClerkConfigured } from "@/lib/clerk-config";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -62,10 +63,15 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
         {/* ClerkProvider lives inside <body>, not wrapping <html> — required for
-            Cache Components / PPR compatibility (Clerk Core 3). */}
-        <ClerkProvider>
+            Cache Components / PPR compatibility (Clerk Core 3). Skipped entirely until Clerk
+            is provisioned (no student accounts needed yet) — it throws without real keys. */}
+        {isClerkConfigured() ? (
+          <ClerkProvider>
+            <TooltipProvider>{children}</TooltipProvider>
+          </ClerkProvider>
+        ) : (
           <TooltipProvider>{children}</TooltipProvider>
-        </ClerkProvider>
+        )}
       </body>
     </html>
   );

@@ -2,6 +2,8 @@ import { Suspense } from "react";
 import { UserButton } from "@clerk/nextjs";
 import Sidebar from "@/components/dashboard/Sidebar";
 import SidebarSkeleton from "@/components/dashboard/SidebarSkeleton";
+import ClerkNotConfigured from "@/components/ClerkNotConfigured";
+import { isClerkConfigured } from "@/lib/clerk-config";
 import { verifySession } from "@/lib/dal";
 
 // The auth check (and everything it gates) is pushed into an async leaf component wrapped in
@@ -22,6 +24,8 @@ function DashboardSkeleton() {
 }
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
+  if (!isClerkConfigured()) return <ClerkNotConfigured />;
+
   return (
     <div className="flex min-h-screen bg-background">
       <Suspense fallback={<SidebarSkeleton />}>

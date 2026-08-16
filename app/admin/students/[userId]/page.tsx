@@ -12,6 +12,7 @@ import { isDbConfigured } from "@/lib/content";
 import { getStudent } from "@/lib/clerk-admin";
 import { evolutionFromXp } from "@/lib/xp";
 import { verifyAdmin } from "@/lib/admin";
+import { isClerkConfigured } from "@/lib/clerk-config";
 import { toggleAdmin } from "./actions";
 
 export async function generateMetadata({
@@ -19,6 +20,9 @@ export async function generateMetadata({
 }: {
   params: Promise<{ userId: string }>;
 }): Promise<Metadata> {
+  // Keep this static when Clerk isn't configured — admin/layout.tsx bails out to a fully
+  // static notice in that case, so this must not be the route's only dynamic data access.
+  if (!isClerkConfigured()) return { title: "Student · Admin" };
   const { userId } = await params;
   const student = await getStudent(userId);
   return { title: student ? `${student.firstName ?? student.email} · Admin` : "Student · Admin" };
