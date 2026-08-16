@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { ClerkProvider } from "@clerk/nextjs";
+import { TooltipProvider } from "@/components/ui/tooltip";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,18 +15,38 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CodeVolve — Building with AI",
+  metadataBase: new URL("https://codevolve.com.au"),
+  title: {
+    default: "CodeVolve — Evolve Into an Industry-Ready Developer",
+    template: "%s · CodeVolve",
+  },
   description:
-    "CodeVolve Pty Ltd builds AI-powered products across industries. From commerce to software, we create intelligent products that evolve how people work.",
-  keywords: ["AI", "artificial intelligence", "AI products", "dealZ", "commerce", "software"],
+    "CodeVolve is the IT training track for school students and college grads. Learn to code alongside school, ship real projects with industry mentors, and evolve — init, commit, merge, deploy — into an industry-ready engineer.",
+  keywords: [
+    "IT training",
+    "coding for school students",
+    "college grad tech bootcamp",
+    "learn to code",
+    "industry ready",
+    "software engineering career",
+    "CodeVolve",
+  ],
   icons: {
     icon: "/icon.svg",
     shortcut: "/icon.svg",
   },
   openGraph: {
-    title: "CodeVolve — Building with AI",
-    description: "Building AI-powered products that change how people work.",
+    title: "CodeVolve — Evolve Into an Industry-Ready Developer",
+    description:
+      "The IT training track for school students & college grads. init → commit → merge → deploy your career.",
     type: "website",
+    siteName: "CodeVolve",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "CodeVolve — Evolve Into an Industry-Ready Developer",
+    description:
+      "The IT training track for school students & college grads. init → commit → merge → deploy your career.",
   },
 };
 
@@ -34,8 +56,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-[#0a0a0f] text-[#f0f0f5]">{children}</body>
+    <html
+      lang="en"
+      className={`dark ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+    >
+      <body className="min-h-full flex flex-col bg-background text-foreground">
+        {/* ClerkProvider lives inside <body>, not wrapping <html> — required for
+            Cache Components / PPR compatibility (Clerk Core 3). */}
+        <ClerkProvider>
+          <TooltipProvider>{children}</TooltipProvider>
+        </ClerkProvider>
+      </body>
     </html>
   );
 }

@@ -1,6 +1,17 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
+import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+
+const links = [
+  { href: "/tracks", label: "Tracks" },
+  { href: "/how-it-works", label: "How it works" },
+  { href: "/mentors", label: "Mentors" },
+  { href: "/for-schools", label: "For Schools" },
+  { href: "/pricing", label: "Pricing" },
+];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -12,48 +23,47 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const links = [
-    { href: "#about", label: "About" },
-    { href: "#products", label: "Products" },
-    { href: "#contact", label: "Contact" },
-  ];
-
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-[#0a0a0f]/90 backdrop-blur-md border-b border-white/5" : "bg-transparent"
+        scrolled ? "bg-background/90 backdrop-blur-md border-b border-border" : "bg-transparent"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-violet-500 to-cyan-400 flex items-center justify-center text-white font-bold text-sm">
+      <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
+        <Link href="/" className="group flex items-center gap-2">
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-violet-500 to-cyan-400 text-sm font-bold text-white">
             CV
           </div>
-          <span className="font-semibold text-white text-lg tracking-tight">CodeVolve</span>
-        </a>
+          <span className="font-mono text-base font-semibold tracking-tight text-foreground">
+            <span className="text-muted-foreground">&gt;</span> codevolve
+          </span>
+        </Link>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-7">
           {links.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
-              className="text-sm text-white/60 hover:text-white transition-colors duration-200"
+              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
-          <a
-            href="#contact"
-            className="text-sm px-4 py-2 rounded-full bg-gradient-to-r from-violet-600 to-cyan-500 text-white font-medium hover:opacity-90 transition-opacity"
+          <Link href="/sign-in" className="text-sm text-muted-foreground hover:text-foreground">
+            Sign in
+          </Link>
+          <Link
+            href="/sign-up"
+            className={cn(buttonVariants({ size: "default" }), "rounded-full px-4")}
           >
-            Get in touch
-          </a>
+            Start evolving
+          </Link>
         </div>
 
         {/* Mobile menu button */}
         <button
-          className="md:hidden text-white/70 hover:text-white"
+          className="text-muted-foreground hover:text-foreground md:hidden"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
@@ -76,24 +86,31 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-[#0a0a0f]/95 backdrop-blur-md border-t border-white/5 px-6 py-4 flex flex-col gap-4">
+        <div className="flex flex-col gap-4 border-t border-border bg-background/95 px-6 py-4 backdrop-blur-md md:hidden">
           {links.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
               onClick={() => setMenuOpen(false)}
-              className="text-sm text-white/70 hover:text-white transition-colors"
+              className="text-sm text-muted-foreground hover:text-foreground"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
-          <a
-            href="#contact"
+          <Link
+            href="/sign-in"
             onClick={() => setMenuOpen(false)}
-            className="text-sm px-4 py-2 rounded-full bg-gradient-to-r from-violet-600 to-cyan-500 text-white font-medium text-center"
+            className="text-sm text-muted-foreground hover:text-foreground"
           >
-            Get in touch
-          </a>
+            Sign in
+          </Link>
+          <Link
+            href="/sign-up"
+            onClick={() => setMenuOpen(false)}
+            className={cn(buttonVariants(), "w-full rounded-full")}
+          >
+            Start evolving
+          </Link>
         </div>
       )}
     </nav>
