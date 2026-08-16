@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import CopyrightYear from "@/components/CopyrightYear";
 
 export const metadata: Metadata = {
   title: "Scout — Discover Local Deals Near You",
@@ -226,7 +227,7 @@ export default function ScoutLanding() {
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-white/25 text-sm">
           <div className="flex items-center gap-2">
             <div className="w-5 h-5 rounded bg-gradient-to-br from-violet-500 to-cyan-400" />
-            <span>&copy; {new Date().getFullYear()} CodeVolve Pty Ltd. All rights reserved.</span>
+            <span>&copy; <CopyrightYear /> CodeVolve Pty Ltd. All rights reserved.</span>
           </div>
           <div className="flex items-center gap-6">
             <Link href="/privacy" className="hover:text-white/60 transition-colors">Privacy Policy</Link>
